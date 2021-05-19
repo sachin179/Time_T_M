@@ -57,7 +57,7 @@ namespace banifiu
             try
             {
                 con2.connection();
-                MessageBox.Show("connectionsuccess full!");
+              //  MessageBox.Show("connectionsuccess full!");
                 cmd1 = new MySqlCommand("SELECT COUNT(*) FROM lecturer where level = 1", con2.con2);
                 cmd2 = new MySqlCommand("SELECT COUNT(*) FROM lecturer where level = 2", con2.con2);
                 cmd3 = new MySqlCommand("SELECT COUNT(*) FROM lecturer where level = 3", con2.con2);
@@ -65,11 +65,7 @@ namespace banifiu
                 cmd5 = new MySqlCommand("SELECT COUNT(*) FROM lecturer where level = 5", con2.con2);
                 cmd6 = new MySqlCommand("SELECT COUNT(*) FROM lecturer where level = 6", con2.con2);
                 cmd7 = new MySqlCommand("SELECT COUNT(*) FROM lecturer ", con2.con2);
-                // adapter = new MySqlDataAdapter(cmd);
-                //   ds = new DataSet();
-                //  adapter.Fill(ds);
-                //dataSession.DataSource = ds;
-                // con.con.Close();
+             
 
                 Int32 count_pro = Convert.ToInt32(cmd1.ExecuteScalar());
                 Int32 Count_ass_pro = Convert.ToInt32(cmd2.ExecuteScalar());

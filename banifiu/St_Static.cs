@@ -55,7 +55,7 @@ namespace banifiu
             try
             {
                 con2.connection();
-                MessageBox.Show("connectionsuccess full!");
+               // MessageBox.Show("connectionsuccess full!");
                 cmd1 = new MySqlCommand("SELECT COUNT(*) FROM studentadd where academicYear = 'Y1.S1'", con2.con2);
                 cmd2 = new MySqlCommand("SELECT COUNT(*) FROM studentadd where academicYear = 'Y2.S1'", con2.con2);
                 cmd3 = new MySqlCommand("SELECT COUNT(*) FROM studentadd where academicYear = 'Y3.S1'", con2.con2);
@@ -68,11 +68,7 @@ namespace banifiu
                 cmd44 = new MySqlCommand("SELECT COUNT(*) FROM studentadd where programme = 'Software Engineering'", con2.con2);
                 cmd55 = new MySqlCommand("SELECT COUNT(*) FROM studentadd where programme = 'Interactive Media'", con2.con2);
 
-                // adapter = new MySqlDataAdapter(cmd);
-                //   ds = new DataSet();
-                //  adapter.Fill(ds);
-                //dataSession.DataSource = ds;
-                // con.con.Close();
+             
 
                 Int32 Count1year = Convert.ToInt32(cmd1.ExecuteScalar());
                 Int32 Count2year = Convert.ToInt32(cmd2.ExecuteScalar());

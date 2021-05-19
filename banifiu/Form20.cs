@@ -32,7 +32,8 @@ namespace banifiu
         public Form20()
         {
             InitializeComponent();
-            
+
+   
         }
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
@@ -42,9 +43,7 @@ namespace banifiu
 
         public void loadgrpID()
         {
-            //dataSession.DataSource = null;
-          //  try
-         //   {
+          
                 con.connection();
                // MessageBox.Show("connectionsuccess full!");
                 cmd = new MySqlCommand("select * from locationt", con.con);
@@ -57,19 +56,13 @@ namespace banifiu
                 comboBox2.DataSource = ds.Tables[0];
                 comboBox2.DisplayMember = "rname";
                 comboBox2.ValueMember = "id";
-         //   }
-         //   catch (Exception ex)
-         //   {
-          //      MessageBox.Show(ex.Message);
-         // }
+     
 
         }
 
         public void subgroup_load()
         {
-            //dataSession.DataSource = null;
-          //  try
-          //  {
+           
                 con2.connection();
             //   MessageBox.Show("connectionsuccess full!");
                 cmd2 = new MySqlCommand("select * from consecutive", con2.con2);
@@ -82,18 +75,13 @@ namespace banifiu
                 comboBox3.DataSource = ds2.Tables[0];
                 comboBox3.DisplayMember = "subgrpID";
                 comboBox3.ValueMember = "consecutiveID";
-          //  }
-         //   catch (Exception ex)
-          //  {
-            //    MessageBox.Show(ex.Message);
-          //  }
+     
 
         }
 
         public void Tag_load()
         {
-            //dataSession.DataSource = null;
-          //  try
+        
         //    {
                 con2.connection();
               //  MessageBox.Show("connectionsuccess full!");
@@ -107,19 +95,36 @@ namespace banifiu
                 comboBox4.DataSource = ds2.Tables[0];
                 comboBox4.DisplayMember = "tagName";
                 comboBox4.ValueMember = "tagID";
-         //   }
-        //    catch (Exception ex)
-         //   {
-               // MessageBox.Show(ex.Message);
-         //   }
+     
+
+        }
+        
+
+
+
+               public void lecture_secound_load()
+        {
+
+            con2.connection();
+            //   MessageBox.Show("connectionsuccess full!");
+            cmd2 = new MySqlCommand("select * from lecturer", con2.con2);
+            adapter2 = new MySqlDataAdapter(cmd2);
+            ds2 = new DataSet();
+            adapter2.Fill(ds2);
+            //dataSession.DataSource = ds;
+            con2.con2.Close();
+
+            comboBox8.DataSource = ds2.Tables[0];
+            comboBox8.DisplayMember = "lecturerName";
+            comboBox8.ValueMember = "id";
+
 
         }
 
+
         public void lecture_load()
         {
-            //dataSession.DataSource = null;
-        //    try
-          //  {
+          
                 con2.connection();
              //   MessageBox.Show("connectionsuccess full!");
                 cmd2 = new MySqlCommand("select * from lecturer", con2.con2);
@@ -132,11 +137,7 @@ namespace banifiu
                 comboBox5.DataSource = ds2.Tables[0];
                 comboBox5.DisplayMember = "lecturerName";
                 comboBox5.ValueMember = "id";
-       //     }
-        //    catch (Exception ex)
-        //    {
-       //         MessageBox.Show(ex.Message);
-        //    }
+    
 
         }
 
@@ -159,19 +160,13 @@ namespace banifiu
             comboBox6.ValueMember = "id";
 
 
-
-
-
-
         }
 
 
 
         public void Subject_load()
         {
-            //dataSession.DataSource = null;
-      //      try
-       //     {
+           
                 con2.connection();
               //  MessageBox.Show("connectionsuccess full!");
                 cmd2 = new MySqlCommand("select * from subject", con2.con2);
@@ -187,15 +182,6 @@ namespace banifiu
                 comboBox1.ValueMember = "id";
 
 
-           
-
-         
-            //     }
-            //    catch (Exception ex)
-            //  {
-            //      MessageBox.Show(ex.Message);
-            //  }
-
         }
 
         private void Form20_Load(object sender, EventArgs e)
@@ -208,20 +194,13 @@ namespace banifiu
             day_hours_load();
             loadNtable();
             loadNtable_con();
-
+            lecture_secound_load();
 
         }
 
         public void loadNtable()
         {
-            /*bunifuCustomDataGrid2.DataSource = null;
-            con2.connection();
-            adapter2 = new MySqlDataAdapter("select id'id', lecture_1'lecture 1', sub_code'Subject Code', tag'Related Tag', room'Related Room', sub_group'Sub Group', N_Of_Student'Nu Of Student', Day_and_time'Date and Time' from new_table ", con2.con2);
-            
-            dt2 = new DataTable();
-            adapter2.Fill(dt2);
-            bunifuCustomDataGrid2.DataSource = dt2;
-            con2.con2.Close();*/
+           
 
             String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = studentdb ";
             MySqlConnection con = new MySqlConnection(connectionString);
@@ -234,10 +213,10 @@ namespace banifiu
             MySqlDataReader dr = cmd.ExecuteReader();
 
 
-            bunifuCustomDataGrid2.Rows.Clear();
+            bunifuCustomDataGrid2.Rows.Clear(); 
             while (dr.Read())
             {
-                String[] row = { dr["id"].ToString(), dr["lecture_1"].ToString(), dr["subject"].ToString(), dr["sub_code"].ToString(), dr["tag"].ToString(), dr["room"].ToString(), dr["sub_group"].ToString(), dr["N_Of_Student"].ToString(), dr["Day_and_time"].ToString() };
+                String[] row = { dr["id"].ToString(), dr["lecture_1"].ToString(), dr["lecture_2"].ToString(), dr["subject"].ToString(), dr["sub_code"].ToString(), dr["tag"].ToString(), dr["room"].ToString(), dr["sub_group"].ToString(), dr["N_Of_Student"].ToString(), dr["Day_and_time"].ToString() };
                 bunifuCustomDataGrid2.Rows.Add(row);
             }
         }
@@ -248,14 +227,7 @@ namespace banifiu
 
         public void loadNtable_con()
         {
-            /*bunifuCustomDataGrid2.DataSource = null;
-            con2.connection();
-            adapter2 = new MySqlDataAdapter("select id'id', lecture_1'lecture 1', sub_code'Subject Code', tag'Related Tag', room'Related Room', sub_group'Sub Group', N_Of_Student'Nu Of Student', Day_and_time'Date and Time' from new_table ", con2.con2);
-            
-            dt2 = new DataTable();
-            adapter2.Fill(dt2);
-            bunifuCustomDataGrid2.DataSource = dt2;
-            con2.con2.Close();*/
+          
 
             String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = studentdb ";
             MySqlConnection con = new MySqlConnection(connectionString);
@@ -268,10 +240,10 @@ namespace banifiu
             MySqlDataReader dr = cmd.ExecuteReader();
 
 
-            bunifuCustomDataGrid3.Rows.Clear();
+            bunifuCustomDataGrid3.Rows.Clear(); 
             while (dr.Read())
             {
-                String[] row = { dr["id"].ToString(), dr["lecture_1"].ToString(),  dr["subject"].ToString(), dr["sub_code"].ToString(), dr["tag"].ToString(), dr["room"].ToString(), dr["sub_group"].ToString(), dr["N_Of_Student"].ToString(), dr["Day_and_time"].ToString() };
+                String[] row = { dr["id"].ToString(), dr["lecture_1"].ToString(), dr["lecture_2"].ToString(), dr["subject"].ToString(), dr["sub_code"].ToString(), dr["tag"].ToString(), dr["room"].ToString(), dr["sub_group"].ToString(), dr["N_Of_Student"].ToString(), dr["Day_and_time"].ToString() };
                 bunifuCustomDataGrid3.Rows.Add(row);
             }
         }
@@ -322,7 +294,8 @@ namespace banifiu
                    // MessageBox.Show("connectionsuccess full!");
 
                     String lecture_1 = comboBox5.Text;
-                    String subject = comboBox1.Text;
+                      String lecture_2 = comboBox8.Text;
+                     String subject = comboBox1.Text;
                     String sub_code = textBox1.Text;
 
                     String tag = comboBox4.Text;
@@ -339,7 +312,7 @@ namespace banifiu
 
                 if (session == "normal")
                 {
-                    String sql = "insert into new_table(lecture_1, subject , sub_code , tag , room , sub_group , N_Of_Student , Day_and_time) values ('" + lecture_1 + " ','" + subject + " ','" + sub_code + " ','" + tag + "','" + room + "','" + sub_group + " ','" + N_Of_Student + "','" + Day_and_time + " ')";
+                    String sql = "insert into new_table(lecture_1,lecture_2, subject , sub_code , tag , room , sub_group , N_Of_Student , Day_and_time) values ('" + lecture_1 + " ','" + lecture_2 + " ','" + subject + " ','" + sub_code + " ','" + tag + "','" + room + "','" + sub_group + " ','" + N_Of_Student + "','" + Day_and_time + " ')";
 
 
                     MySqlCommand cmd = con.CreateCommand();
@@ -349,7 +322,7 @@ namespace banifiu
                 }
                 else if (session == "consecutive") 
                 {
-                    String sql = "insert into new_table1(lecture_1, subject , sub_code , tag , room , sub_group , N_Of_Student , Day_and_time) values ('" + lecture_1 + " ','" + subject + " ','" + sub_code + " ','" + tag + "','" + room + "','" + sub_group + " ','" + N_Of_Student + "','" + Day_and_time + " ')";
+                    String sql = "insert into new_table1(lecture_1,lecture_2, subject , sub_code , tag , room , sub_group , N_Of_Student , Day_and_time) values ('" + lecture_1 + " ','" + lecture_2 + " ','" + subject + " ','" + sub_code + " ','" + tag + "','" + room + "','" + sub_group + " ','" + N_Of_Student + "','" + Day_and_time + " ')";
 
                     MySqlCommand cmd = con.CreateCommand();
                     cmd.CommandText = sql;
@@ -357,10 +330,6 @@ namespace banifiu
 
 
                 }
-
-
-
-
 
 
 
@@ -384,13 +353,14 @@ namespace banifiu
                 {
                     textBox3.Text = bunifuCustomDataGrid2.CurrentRow.Cells[0].Value.ToString();
                     comboBox5.Text = bunifuCustomDataGrid2.CurrentRow.Cells[1].Value.ToString();
-                    comboBox1.Text = bunifuCustomDataGrid2.CurrentRow.Cells[2].Value.ToString();
-                    textBox1.Text = bunifuCustomDataGrid2.CurrentRow.Cells[3].Value.ToString();
-                    comboBox4.Text = bunifuCustomDataGrid2.CurrentRow.Cells[4].Value.ToString();
-                    comboBox2.Text = bunifuCustomDataGrid2.CurrentRow.Cells[5].Value.ToString();
-                    comboBox3.Text = bunifuCustomDataGrid2.CurrentRow.Cells[6].Value.ToString();
-                    textBox2.Text = bunifuCustomDataGrid2.CurrentRow.Cells[7].Value.ToString();
-                    comboBox6.Text = bunifuCustomDataGrid2.CurrentRow.Cells[8].Value.ToString();
+                    comboBox8.Text = bunifuCustomDataGrid2.CurrentRow.Cells[2].Value.ToString();
+                    comboBox1.Text = bunifuCustomDataGrid2.CurrentRow.Cells[3].Value.ToString();
+                    textBox1.Text = bunifuCustomDataGrid2.CurrentRow.Cells[4].Value.ToString();
+                    comboBox4.Text = bunifuCustomDataGrid2.CurrentRow.Cells[5].Value.ToString();
+                    comboBox2.Text = bunifuCustomDataGrid2.CurrentRow.Cells[6].Value.ToString();
+                    comboBox3.Text = bunifuCustomDataGrid2.CurrentRow.Cells[7].Value.ToString();
+                    textBox2.Text = bunifuCustomDataGrid2.CurrentRow.Cells[8].Value.ToString();
+                    comboBox6.Text = bunifuCustomDataGrid2.CurrentRow.Cells[9].Value.ToString();
                 }
 
             }
@@ -399,6 +369,8 @@ namespace banifiu
 
             }
         }
+
+        //clear data
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
@@ -411,6 +383,7 @@ namespace banifiu
             textBox2.Text = string.Empty;
             comboBox6.Text = string.Empty;
             textBox3.Text = string.Empty;
+            comboBox8.Text = string.Empty;
 
 
         }
@@ -422,15 +395,20 @@ namespace banifiu
                 if (bunifuCustomDataGrid3.CurrentRow.Index != -1)
                 {
                     textBox3.Text = bunifuCustomDataGrid3.CurrentRow.Cells[0].Value.ToString();
-                    comboBox5.Text = bunifuCustomDataGrid3.CurrentRow.Cells[1].Value.ToString(); 
-                    comboBox1.Text = bunifuCustomDataGrid3.CurrentRow.Cells[2].Value.ToString();
-                    textBox1.Text = bunifuCustomDataGrid3.CurrentRow.Cells[3].Value.ToString();
-                    comboBox4.Text = bunifuCustomDataGrid3.CurrentRow.Cells[4].Value.ToString();
-                    comboBox2.Text = bunifuCustomDataGrid3.CurrentRow.Cells[5].Value.ToString();
-                    comboBox3.Text = bunifuCustomDataGrid3.CurrentRow.Cells[6].Value.ToString();
-                    textBox2.Text = bunifuCustomDataGrid3.CurrentRow.Cells[7].Value.ToString();
-                    comboBox6.Text = bunifuCustomDataGrid3.CurrentRow.Cells[8].Value.ToString();
+                    comboBox5.Text = bunifuCustomDataGrid3.CurrentRow.Cells[1].Value.ToString();
+                    comboBox8.Text = bunifuCustomDataGrid3.CurrentRow.Cells[2].Value.ToString();
+                    comboBox1.Text = bunifuCustomDataGrid3.CurrentRow.Cells[3].Value.ToString();
+                    textBox1.Text = bunifuCustomDataGrid3.CurrentRow.Cells[4].Value.ToString();
+                    comboBox4.Text = bunifuCustomDataGrid3.CurrentRow.Cells[5].Value.ToString();
+                    comboBox2.Text = bunifuCustomDataGrid3.CurrentRow.Cells[6].Value.ToString();
+                    comboBox3.Text = bunifuCustomDataGrid3.CurrentRow.Cells[7].Value.ToString();
+                    textBox2.Text = bunifuCustomDataGrid3.CurrentRow.Cells[8].Value.ToString();
+                    comboBox6.Text = bunifuCustomDataGrid3.CurrentRow.Cells[9].Value.ToString();
+                    
                 }
+                
+
+
 
             }
             catch
@@ -456,6 +434,7 @@ namespace banifiu
 
                 String id = textBox3.Text;
                 String lecture_1 = comboBox5.Text;
+                String lecture_2 = comboBox8.Text;
                 String subject = comboBox1.Text;
                 String sub_code = textBox1.Text;
 
@@ -467,7 +446,7 @@ namespace banifiu
 
                 String Day_and_time = comboBox6.Text;
 
-                String sql = "update new_table set lecture_1 = ' " + lecture_1 + " ' , subject = ' " + subject + " ', sub_code = ' " + sub_code + " ', tag = ' " + tag + " ', room = ' " + room + " ', sub_group = ' " + sub_group + " ', N_Of_Student = ' " + N_Of_Student + " ', Day_and_time= ' " + Day_and_time + " '  where id =' " + id + " ' ";
+                String sql = "update new_table set lecture_1 = ' " + lecture_1 + " ' ,lecture_2 = ' " + lecture_2 + " ' , subject = ' " + subject + " ', sub_code = ' " + sub_code + " ', tag = ' " + tag + " ', room = ' " + room + " ', sub_group = ' " + sub_group + " ', N_Of_Student = ' " + N_Of_Student + " ', Day_and_time= ' " + Day_and_time + " '  where id =' " + id + " ' ";
 
                 MySqlCommand cmd = con.CreateCommand();
                 cmd.CommandText = sql;
@@ -487,6 +466,18 @@ namespace banifiu
 
         }
 
+
+
+        //add more lecture
+
+        public void add_lecture_con()
+
+        {
+
+           
+
+        }
+
         public void new_table2_update()
 
         {
@@ -499,6 +490,7 @@ namespace banifiu
 
             String id = textBox3.Text;
             String lecture_1 = comboBox5.Text;
+            String lecture_2 = comboBox8.Text;
             String subject = comboBox1.Text;
             String sub_code = textBox1.Text;
 
@@ -510,7 +502,7 @@ namespace banifiu
 
             String Day_and_time = comboBox6.Text;
 
-            String sql = "update new_table1 set lecture_1 = ' " + lecture_1 + " ' , subject = ' " + subject + " ', sub_code = ' " + sub_code + " ', tag = ' " + tag + " ', room = ' " + room + " ', sub_group = ' " + sub_group + " ', N_Of_Student = ' " + N_Of_Student + " ', Day_and_time= ' " + Day_and_time + " '  where id =' " + id + " ' ";
+            String sql = "update new_table1 set lecture_1 = ' " + lecture_1 + " ' ,lecture_2 = ' " + lecture_2 + " ' , subject = ' " + subject + " ', sub_code = ' " + sub_code + " ', tag = ' " + tag + " ', room = ' " + room + " ', sub_group = ' " + sub_group + " ', N_Of_Student = ' " + N_Of_Student + " ', Day_and_time= ' " + Day_and_time + " '  where id =' " + id + " ' ";
 
             MySqlCommand cmd = con.CreateCommand();
             cmd.CommandText = sql;
@@ -564,6 +556,44 @@ namespace banifiu
         {
             loadNtable();
             loadNtable_con();
+        }
+
+        private void bunifuCustomDataGrid1_DoubleClick(object sender, EventArgs e)
+        {
+           
+
+            //consigative
+            con2.connection();
+            adapter2 = new MySqlDataAdapter("select lecture_1,lecture_2 from new_table1 where id like'%" + textBox3.Text + "%'",con2.con2);
+            dt2 = new DataTable();
+            adapter2.Fill(dt2);
+            bunifuCustomDataGrid1.DataSource = dt2;
+            con2.con2.Close();
+
+
+            con2.connection();
+            adapter2 = new MySqlDataAdapter("select lecture_1,lecture_2 from new_table where id like'%" + textBox3.Text + "%'", con2.con2);
+            dt2= new DataTable();
+            adapter2.Fill(dt2);
+            bunifuCustomDataGrid1.DataSource = dt2;
+            con2.con2.Close();
+
+        
+        }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGrid4_DoubleClick(object sender, EventArgs e)
+        {
+            con2.connection();
+            adapter2 = new MySqlDataAdapter("select lecture_1,lecture_2 from new_table1 where id like'%" + textBox3.Text + "%'", con2.con2);
+            dt2 = new DataTable();
+            adapter2.Fill(dt2);
+            bunifuCustomDataGrid4.DataSource = dt2;
+            con2.con2.Close();
         }
     }
 }

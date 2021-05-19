@@ -58,17 +58,13 @@ namespace banifiu
             try
             {
                 con2.connection();
-                MessageBox.Show("connectionsuccess full!");
+               // MessageBox.Show("connectionsuccess full!");
                 cmd1 = new MySqlCommand("SELECT COUNT(*) FROM subject where offeredYear = 'Year 1 '", con2.con2);
                 cmd2 = new MySqlCommand("SELECT COUNT(*) FROM subject where offeredYear = 'Year 2 '", con2.con2);
                 cmd3 = new MySqlCommand("SELECT COUNT(*) FROM subject where offeredYear = 'Year 3 '", con2.con2);
                 cmd4 = new MySqlCommand("SELECT COUNT(*) FROM subject where offeredYear = 'Year 4 '", con2.con2);
                 cmd5 = new MySqlCommand("SELECT COUNT(*) FROM subject", con2.con2);
-                // adapter = new MySqlDataAdapter(cmd);
-                //   ds = new DataSet();
-                //  adapter.Fill(ds);
-                //dataSession.DataSource = ds;
-                // con.con.Close();
+              
 
                 Int32 Count1_sub = Convert.ToInt32(cmd1.ExecuteScalar());
                 Int32 Count2_sub = Convert.ToInt32(cmd2.ExecuteScalar());
