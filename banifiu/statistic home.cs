@@ -20,7 +20,7 @@ namespace banifiu
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
             bunifuGradientPanel1.Controls.Clear();
-            Form6 intfrm = new Form6();
+            Lec_static intfrm = new Lec_static();
             intfrm.TopLevel = false;
 
             bunifuGradientPanel1.Controls.Add(intfrm);
@@ -36,7 +36,7 @@ namespace banifiu
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
             bunifuGradientPanel1.Controls.Clear();
-            Form5 intfrm = new Form5();
+            St_Static intfrm = new St_Static();
             intfrm.TopLevel = false;
 
             bunifuGradientPanel1.Controls.Add(intfrm);
@@ -49,7 +49,7 @@ namespace banifiu
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
             bunifuGradientPanel1.Controls.Clear();
-            Form1 intfrm = new Form1();
+            sub_static2 intfrm = new sub_static2();
             intfrm.TopLevel = false;
 
             bunifuGradientPanel1.Controls.Add(intfrm);
@@ -61,16 +61,16 @@ namespace banifiu
 
         private void btnLocationM_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            location f1 = new location();
-            f1.Show();
+           // this.Hide();
+          //  location f1 = new location();
+            //f1.Show();
         }
 
         private void btnSessionM_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3 f1 = new Form3();
-            f1.Show();
+           // this.Hide();
+           // Form3 f1 = new Form3();
+            //f1.Show();
         }
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
@@ -79,6 +79,11 @@ namespace banifiu
         }
 
         private void btnTagM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
         {
 
         }

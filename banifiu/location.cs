@@ -60,7 +60,7 @@ namespace banifiu
                 String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = addlocation ";
                 MySqlConnection con = new MySqlConnection(connectionString);
                 con.Open();
-                MessageBox.Show("connectionsuccess full!");
+               // MessageBox.Show("connectionsuccess full!");
 
                 String bname = bname1.Text;
                 String rname = roomntxt.Text;
@@ -88,6 +88,14 @@ namespace banifiu
        
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+
+            load_l_table();
+
+
+        }
+        public void load_l_table()
+
+        {
             String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = addlocation ";
             MySqlConnection con = new MySqlConnection(connectionString);
             con.Open();
@@ -101,12 +109,9 @@ namespace banifiu
             dataGridView1.Rows.Clear();
             while (dr.Read())
             {
-                String []row = { dr["id"].ToString(), dr["bname"].ToString(), dr["rname"].ToString(), dr["rtype"].ToString() };
+                String[] row = { dr["id"].ToString(), dr["bname"].ToString(), dr["rname"].ToString(), dr["rtype"].ToString() };
                 dataGridView1.Rows.Add(row);
             }
-
-          
-            
 
 
 
@@ -164,7 +169,7 @@ namespace banifiu
                 String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = addlocation ";
                 MySqlConnection con = new MySqlConnection(connectionString);
                 con.Open();
-                MessageBox.Show("connectionsuccess full!");
+              //  MessageBox.Show("connectionsuccess full!");
 
                 String id = txtid.Text;
                 String bname = bname1.Text;
@@ -198,7 +203,7 @@ namespace banifiu
                 String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = addlocation ";
                 MySqlConnection con = new MySqlConnection(connectionString);
                 con.Open();
-                MessageBox.Show("connectionsuccess full!");
+            //    MessageBox.Show("connectionsuccess full!");
 
                 String id = txtid.Text;
 
@@ -219,17 +224,17 @@ namespace banifiu
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form4 f1 = new Form4();
-            f1.Show();
+            //this.Hide();
+           // Form4 f1 = new Form4();
+           // f1.Show();
         }
 
         private void btnSessionNotAvailM_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3 f1 = new Form3();
+            //this.Hide();
+          //  Form3 f1 = new Form3();
 
-            f1.Show();
+          //  f1.Show();
         }
 
         private void btnTagM_Click(object sender, EventArgs e)
@@ -250,6 +255,30 @@ namespace banifiu
             buildTtxt.Clear();
         }
 
+        private void location_Load(object sender, EventArgs e)
+        {
+            load_l_table();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.CurrentRow.Index != -1)
+                {
+                    txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                    bname1.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                    roomntxt.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                    buildTtxt.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
+
+                }
+            }
+            catch
+            {
+
+            }
+        }
     }
     
 }

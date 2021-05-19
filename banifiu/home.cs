@@ -51,7 +51,7 @@ namespace banifiu
         private void btnSessionM_Click(object sender, EventArgs e)
         {
             bunifuGradientPanel2.Controls.Clear();
-            Form2 intfrm = new Form2();
+            Form20 intfrm = new Form20();
             intfrm.TopLevel = false;
 
             bunifuGradientPanel2.Controls.Add(intfrm);

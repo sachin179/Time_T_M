@@ -83,6 +83,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -96,32 +97,14 @@
     <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="addbuildingDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>addbuildingDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="addlocationDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>addlocationDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="addlocationDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>addlocationDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="addlocationDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>addlocationDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="BloggingContext.cs" />
-    <Compile Include="Form2.cs">
+    <Compile Include="connect.cs" />
+    <Compile Include="connect2.cs" />
+    <Compile Include="Form20.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Form20.Designer.cs">
+      <DependentUpon>Form20.cs</DependentUpon>
     </Compile>
     <Compile Include="home.cs">
       <SubType>Form</SubType>
@@ -129,23 +112,23 @@
     <Compile Include="home.Designer.cs">
       <DependentUpon>home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lec_static.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lec_static.Designer.cs">
+      <DependentUpon>Lec_static.cs</DependentUpon>
+    </Compile>
     <Compile Include="location.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="location.Designer.cs">
       <DependentUpon>location.cs</DependentUpon>
     </Compile>
-    <Compile Include="subject statisctic.cs">
+    <Compile Include="St_Static.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="subject statisctic.Designer.cs">
-      <DependentUpon>subject statisctic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="manage session with rooms.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="manage session with rooms.Designer.cs">
-      <DependentUpon>manage session with rooms.cs</DependentUpon>
+    <Compile Include="St_Static.Designer.cs">
+      <DependentUpon>St_Static.cs</DependentUpon>
     </Compile>
     <Compile Include="statistic home.cs">
       <SubType>Form</SubType>
@@ -153,45 +136,36 @@
     <Compile Include="statistic home.Designer.cs">
       <DependentUpon>statistic home.cs</DependentUpon>
     </Compile>
-    <Compile Include="student statistic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="student statistic.Designer.cs">
-      <DependentUpon>student statistic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="lecture statistic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="lecture statistic.Designer.cs">
-      <DependentUpon>lecture statistic.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sub_static2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sub_static2.Designer.cs">
+      <DependentUpon>sub_static2.cs</DependentUpon>
+    </Compile>
     <Compile Include="xyzDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>xyzDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Form20.resx">
+      <DependentUpon>Form20.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lec_static.resx">
+      <DependentUpon>Lec_static.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="location.resx">
       <DependentUpon>location.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="manage session with rooms.resx">
-      <DependentUpon>manage session with rooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="statistic home.resx">
       <DependentUpon>statistic home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="subject statisctic.resx">
-      <DependentUpon>subject statisctic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="lecture statistic.resx">
-      <DependentUpon>lecture statistic.cs</DependentUpon>
+    <EmbeddedResource Include="St_Static.resx">
+      <DependentUpon>St_Static.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -203,53 +177,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="student statistic.resx">
-      <DependentUpon>student statistic.cs</DependentUpon>
+    <EmbeddedResource Include="sub_static2.resx">
+      <DependentUpon>sub_static2.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="addbuildingDataSet.xsc">
-      <DependentUpon>addbuildingDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="addbuildingDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>addbuildingDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="addbuildingDataSet.xss">
-      <DependentUpon>addbuildingDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet.xsc">
-      <DependentUpon>addlocationDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>addlocationDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="addlocationDataSet.xss">
-      <DependentUpon>addlocationDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet1.xsc">
-      <DependentUpon>addlocationDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>addlocationDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="addlocationDataSet1.xss">
-      <DependentUpon>addlocationDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet2.xsc">
-      <DependentUpon>addlocationDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="addlocationDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>addlocationDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="addlocationDataSet2.xss">
-      <DependentUpon>addlocationDataSet2.xsd</DependentUpon>
-    </None>
     <None Include="banifiu_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
