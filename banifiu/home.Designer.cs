@@ -466,6 +466,7 @@
             this.btnLecturerM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLecturerM.Textcolor = System.Drawing.Color.White;
             this.btnLecturerM.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLecturerM.Click += new System.EventHandler(this.btnLecturerM_Click);
             // 
             // btnSessionNotAvailM
             // 
@@ -510,7 +511,9 @@
             this.ClientSize = new System.Drawing.Size(1523, 626);
             this.Controls.Add(this.bunifuGradientPanel2);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home";
             this.bunifuGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

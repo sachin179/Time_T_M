@@ -79,6 +79,19 @@ namespace banifiu
         {
 
         }
+
+        private void btnLecturerM_Click(object sender, EventArgs e)
+        {
+            bunifuGradientPanel2.Controls.Clear();
+            lecture intfrm = new lecture();
+            intfrm.TopLevel = false;
+
+            bunifuGradientPanel2.Controls.Add(intfrm);
+            intfrm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            intfrm.Dock = DockStyle.Fill;
+            intfrm.Show();
+
+        }
     }
 
 
