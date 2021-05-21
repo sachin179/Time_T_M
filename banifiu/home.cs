@@ -77,7 +77,14 @@ namespace banifiu
 
         private void btnWorkM_Click(object sender, EventArgs e)
         {
+            bunifuGradientPanel2.Controls.Clear();
+            working intfrm = new working();
+            intfrm.TopLevel = false;
 
+            bunifuGradientPanel2.Controls.Add(intfrm);
+            intfrm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            intfrm.Dock = DockStyle.Fill;
+            intfrm.Show();
         }
 
         private void btnLecturerM_Click(object sender, EventArgs e)
