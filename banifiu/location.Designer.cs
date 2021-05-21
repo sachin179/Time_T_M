@@ -30,9 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(location));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.buildTtxt = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
@@ -41,50 +43,25 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bname1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.dataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuThinButton26 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtid = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.btnAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // bunifuThinButton24
-            // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton24.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bunifuThinButton24.ButtonText = "load ";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnimator.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(375, 146);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(114, 50);
-            this.bunifuThinButton24.TabIndex = 41;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
             // bunifuThinButton23
             // 
@@ -106,7 +83,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(314, 729);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(583, 675);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(173, 50);
@@ -201,16 +178,15 @@
             this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.txtSearch);
+            this.bunifuGradientPanel1.Controls.Add(this.dataGridView1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton26);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel2);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton25);
             this.bunifuGradientPanel1.Controls.Add(this.txtid);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton22);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton21);
-            this.bunifuGradientPanel1.Controls.Add(this.dataGridView1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel8);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton24);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton23);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel5);
             this.bunifuGradientPanel1.Controls.Add(this.buildTtxt);
@@ -231,7 +207,104 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1578, 893);
             this.bunifuGradientPanel1.TabIndex = 1;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(115)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.ColumnHeadersHeight = 40;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.btnAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.dataGridView1.Location = new System.Drawing.Point(560, 195);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.MultiSelect = false;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 40;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(981, 452);
+            this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
+            this.dataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(115)))), ((int)(((byte)(219)))));
+            this.dataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.ThemeStyle.HeaderStyle.Height = 40;
+            this.dataGridView1.ThemeStyle.ReadOnly = true;
+            this.dataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            this.dataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            this.dataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Building Name";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Room Name";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Room Type";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // bunifuThinButton26
             // 
@@ -253,7 +326,7 @@
             this.bunifuThinButton26.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.bunifuThinButton26.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton26.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton26.Location = new System.Drawing.Point(936, 733);
+            this.bunifuThinButton26.Location = new System.Drawing.Point(1354, 675);
             this.bunifuThinButton26.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton26.Name = "bunifuThinButton26";
             this.bunifuThinButton26.Size = new System.Drawing.Size(187, 50);
@@ -269,7 +342,7 @@
             this.btnAnimator.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(294, 107);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(305, 135);
             this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(33, 29);
@@ -296,7 +369,7 @@
             this.bunifuThinButton25.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.bunifuThinButton25.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton25.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton25.Location = new System.Drawing.Point(525, 729);
+            this.bunifuThinButton25.Location = new System.Drawing.Point(836, 675);
             this.bunifuThinButton25.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton25.Name = "bunifuThinButton25";
             this.bunifuThinButton25.Size = new System.Drawing.Size(173, 50);
@@ -311,7 +384,7 @@
             this.logoAnimator.SetDecoration(this.txtid, BunifuAnimatorNS.DecorationType.None);
             this.btnAnimator.SetDecoration(this.txtid, BunifuAnimatorNS.DecorationType.None);
             this.txtid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtid.Location = new System.Drawing.Point(299, 157);
+            this.txtid.Location = new System.Drawing.Point(310, 168);
             this.txtid.Margin = new System.Windows.Forms.Padding(4);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(65, 30);
@@ -337,55 +410,13 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.DodgerBlue;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(721, 729);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(1101, 675);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(187, 50);
             this.bunifuThinButton22.TabIndex = 55;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "View";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnimator.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuThinButton21, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkTurquoise;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(668, 135);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(187, 50);
-            this.bunifuThinButton21.TabIndex = 54;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.btnAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.dataGridView1, BunifuAnimatorNS.DecorationType.None);
-            this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(668, 194);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(609, 420);
-            this.dataGridView1.TabIndex = 53;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // bunifuCustomLabel8
             // 
@@ -401,7 +432,6 @@
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(159, 29);
             this.bunifuCustomLabel8.TabIndex = 49;
             this.bunifuCustomLabel8.Text = "Add Location ";
-            this.bunifuCustomLabel8.Click += new System.EventHandler(this.bunifuCustomLabel8_Click);
             // 
             // bunifuCustomLabel7
             // 
@@ -417,7 +447,6 @@
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(248, 44);
             this.bunifuCustomLabel7.TabIndex = 48;
             this.bunifuCustomLabel7.Text = "XYZ INSTITUDE";
-            this.bunifuCustomLabel7.Click += new System.EventHandler(this.bunifuCustomLabel7_Click);
             // 
             // guna2DragControl1
             // 
@@ -465,6 +494,38 @@
             animation1.TransparencyCoeff = 0F;
             this.btnAnimator.DefaultAnimation = animation1;
             // 
+            // txtSearch
+            // 
+            this.txtSearch.AutoRoundedCorners = true;
+            this.txtSearch.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
+            this.txtSearch.BorderRadius = 19;
+            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnAnimator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
+            this.txtSearch.DefaultText = "";
+            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.DisabledState.Parent = this.txtSearch;
+            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.FocusedState.Parent = this.txtSearch;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.Color.Black;
+            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearch.HoverState.Parent = this.txtSearch;
+            this.txtSearch.Location = new System.Drawing.Point(560, 146);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PasswordChar = '\0';
+            this.txtSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSearch.PlaceholderText = "    Search...";
+            this.txtSearch.SelectedText = "";
+            this.txtSearch.ShadowDecoration.Parent = this.txtSearch;
+            this.txtSearch.Size = new System.Drawing.Size(295, 41);
+            this.txtSearch.TabIndex = 62;
+            // 
             // location
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -485,7 +546,6 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox buildTtxt;
@@ -499,12 +559,16 @@
         private BunifuAnimatorNS.BunifuTransition btnAnimator;
         private BunifuAnimatorNS.BunifuTransition logoAnimator;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox txtid;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton25;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton26;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
     }
 }

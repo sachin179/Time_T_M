@@ -1,6 +1,6 @@
 ﻿namespace banifiu
 {
-    partial class Form4
+    partial class Location_home
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Location_home));
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
@@ -50,7 +49,6 @@
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel7);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton24);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton23);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuThinButton22);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel1);
             this.btnAnimator.SetDecoration(this.bunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None);
@@ -64,9 +62,8 @@
             this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1673, 775);
-            this.bunifuGradientPanel1.TabIndex = 0;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1599, 682);
+            this.bunifuGradientPanel1.TabIndex = 1;
             // 
             // bunifuCustomLabel7
             // 
@@ -82,7 +79,6 @@
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(248, 44);
             this.bunifuCustomLabel7.TabIndex = 50;
             this.bunifuCustomLabel7.Text = "XYZ INSTITUDE";
-            this.bunifuCustomLabel7.Click += new System.EventHandler(this.bunifuCustomLabel7_Click);
             // 
             // bunifuThinButton24
             // 
@@ -93,7 +89,7 @@
             this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.White;
             this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "LECTURE STATICTIS";
+            this.bunifuThinButton24.ButtonText = "LOCATION ADD";
             this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnimator.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.bunifuThinButton24, BunifuAnimatorNS.DecorationType.None);
@@ -112,34 +108,6 @@
             this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton24.Click += new System.EventHandler(this.bunifuThinButton24_Click);
             // 
-            // bunifuThinButton23
-            // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "SUBJECT STATICTIS";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnimator.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.bunifuThinButton23, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Black;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(1169, 386);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(344, 196);
-            this.bunifuThinButton23.TabIndex = 8;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton23.Click += new System.EventHandler(this.bunifuThinButton23_Click);
-            // 
             // bunifuThinButton22
             // 
             this.bunifuThinButton22.ActiveBorderThickness = 1;
@@ -149,7 +117,7 @@
             this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.White;
             this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "STUDENT STATICTIS";
+            this.bunifuThinButton22.ButtonText = "NOT AVAILABLE LACATION";
             this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnimator.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.bunifuThinButton22, BunifuAnimatorNS.DecorationType.None);
@@ -176,13 +144,12 @@
             this.btnAnimator.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(314, 241);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(316, 249);
             this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(263, 36);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(129, 36);
             this.bunifuCustomLabel1.TabIndex = 5;
-            this.bunifuCustomLabel1.Text = "STATISTIC HOME";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
+            this.bunifuCustomLabel1.Text = "Location";
             // 
             // logoAnimator
             // 
@@ -230,18 +197,16 @@
             animation2.TransparencyCoeff = 0F;
             this.btnAnimator.DefaultAnimation = animation2;
             // 
-            // Form4
+            // Location_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1673, 775);
+            this.ClientSize = new System.Drawing.Size(1599, 682);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.logoAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.btnAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form4";
-            this.Text = "Form4";
-            this.Load += new System.EventHandler(this.Form4_Load);
+            this.Name = "Location_home";
+            this.Text = "Location_home";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -251,13 +216,12 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private BunifuAnimatorNS.BunifuTransition logoAnimator;
+        private BunifuAnimatorNS.BunifuTransition btnAnimator;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private BunifuAnimatorNS.BunifuTransition btnAnimator;
-        private BunifuAnimatorNS.BunifuTransition logoAnimator;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
     }
 }

@@ -22,7 +22,8 @@ namespace banifiu
 
         public void connection()
         {
-            con = new MySqlConnection("datasource=localhost; database=addlocation; port=3306; username=root;password=root");
+            con = new MySqlConnection("server = itpm1.mysql.database.azure.com; uid = chmd@itpm1; pwd = Itpm@153708113; database = timetablemanagement;");
+           // con = new MySqlConnection("datasource=localhost; database=addlocation; port=3306; username=root;password=root");
             con.Open();
 
         }

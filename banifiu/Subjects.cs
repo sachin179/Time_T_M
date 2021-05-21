@@ -201,6 +201,7 @@ namespace banifiu
         //cell click
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvSubject.Rows[e.RowIndex];
@@ -213,6 +214,7 @@ namespace banifiu
                 udNoLabHrs.Text = row.Cells[6].Value.ToString();
                 udNoEvoHrs.Text = row.Cells[7].Value.ToString();
             }
+
         }
     }
 }

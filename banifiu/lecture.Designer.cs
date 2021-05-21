@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lecture));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            this.btnAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnClear = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dgvLecturer = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -59,33 +52,12 @@
             this.txtLecturerName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.txtRank = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rcleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLecturer)).BeginInit();
-            this.guna2ShadowPanel1.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnAnimator
-            // 
-            this.btnAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
-            this.btnAnimator.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 1;
-            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 2F;
-            animation3.TransparencyCoeff = 0F;
-            this.btnAnimator.DefaultAnimation = animation3;
             // 
             // btnSave
             // 
@@ -95,8 +67,6 @@
             this.btnSave.BorderRadius = 20;
             this.btnSave.CheckedState.Parent = this.btnSave;
             this.btnSave.CustomImages.Parent = this.btnSave;
-            this.logoAnimator.SetDecoration(this.btnSave, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.btnSave, BunifuAnimatorNS.DecorationType.None);
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(140)))), ((int)(((byte)(255)))));
             this.btnSave.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(77)))), ((int)(((byte)(240)))));
@@ -108,7 +78,7 @@
             this.btnSave.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.btnSave.HoverState.Parent = this.btnSave;
             this.btnSave.IndicateFocus = true;
-            this.btnSave.Location = new System.Drawing.Point(811, 707);
+            this.btnSave.Location = new System.Drawing.Point(782, 744);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
@@ -126,8 +96,6 @@
             this.btnClear.BorderRadius = 20;
             this.btnClear.CheckedState.Parent = this.btnClear;
             this.btnClear.CustomImages.Parent = this.btnClear;
-            this.logoAnimator.SetDecoration(this.btnClear, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.btnClear, BunifuAnimatorNS.DecorationType.None);
             this.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(140)))), ((int)(((byte)(255)))));
             this.btnClear.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(77)))), ((int)(((byte)(240)))));
@@ -139,7 +107,7 @@
             this.btnClear.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.btnClear.HoverState.Parent = this.btnClear;
             this.btnClear.IndicateFocus = true;
-            this.btnClear.Location = new System.Drawing.Point(1044, 707);
+            this.btnClear.Location = new System.Drawing.Point(1015, 744);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.ShadowDecoration.Parent = this.btnClear;
@@ -156,8 +124,6 @@
             this.txtSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
             this.txtSearch.BorderRadius = 19;
             this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.txtSearch, BunifuAnimatorNS.DecorationType.None);
             this.txtSearch.DefaultText = "";
             this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -170,7 +136,7 @@
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
-            this.txtSearch.Location = new System.Drawing.Point(811, 60);
+            this.txtSearch.Location = new System.Drawing.Point(717, 104);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -190,8 +156,6 @@
             this.btnDelete.BorderRadius = 20;
             this.btnDelete.CheckedState.Parent = this.btnDelete;
             this.btnDelete.CustomImages.Parent = this.btnDelete;
-            this.logoAnimator.SetDecoration(this.btnDelete, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.btnDelete, BunifuAnimatorNS.DecorationType.None);
             this.btnDelete.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(140)))), ((int)(((byte)(255)))));
             this.btnDelete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(77)))), ((int)(((byte)(240)))));
@@ -203,7 +167,7 @@
             this.btnDelete.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.btnDelete.HoverState.Parent = this.btnDelete;
             this.btnDelete.IndicateFocus = true;
-            this.btnDelete.Location = new System.Drawing.Point(1277, 707);
+            this.btnDelete.Location = new System.Drawing.Point(1248, 744);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
@@ -219,36 +183,34 @@
             this.dgvLecturer.AllowUserToDeleteRows = false;
             this.dgvLecturer.AllowUserToResizeColumns = false;
             this.dgvLecturer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
-            this.dgvLecturer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
+            this.dgvLecturer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLecturer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLecturer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(224)))), ((int)(((byte)(244)))));
             this.dgvLecturer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvLecturer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvLecturer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(115)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvLecturer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(115)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLecturer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvLecturer.ColumnHeadersHeight = 40;
             this.dgvLecturer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.logoAnimator.SetDecoration(this.dgvLecturer, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.dgvLecturer, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvLecturer.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(186)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLecturer.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvLecturer.EnableHeadersVisualStyles = false;
             this.dgvLecturer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.dgvLecturer.Location = new System.Drawing.Point(722, 119);
+            this.dgvLecturer.Location = new System.Drawing.Point(717, 153);
             this.dgvLecturer.Margin = new System.Windows.Forms.Padding(4);
             this.dgvLecturer.MultiSelect = false;
             this.dgvLecturer.Name = "dgvLecturer";
@@ -290,8 +252,6 @@
             this.btnUpdate.BorderRadius = 20;
             this.btnUpdate.CheckedState.Parent = this.btnUpdate;
             this.btnUpdate.CustomImages.Parent = this.btnUpdate;
-            this.logoAnimator.SetDecoration(this.btnUpdate, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.btnUpdate, BunifuAnimatorNS.DecorationType.None);
             this.btnUpdate.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(140)))), ((int)(((byte)(255)))));
             this.btnUpdate.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(77)))), ((int)(((byte)(240)))));
@@ -303,7 +263,7 @@
             this.btnUpdate.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.btnUpdate.HoverState.Parent = this.btnUpdate;
             this.btnUpdate.IndicateFocus = true;
-            this.btnUpdate.Location = new System.Drawing.Point(1511, 707);
+            this.btnUpdate.Location = new System.Drawing.Point(1482, 744);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
@@ -313,55 +273,12 @@
             this.btnUpdate.UseTransparentBackground = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click_1);
             // 
-            // guna2GradientPanel2
-            // 
-            this.logoAnimator.SetDecoration(this.guna2GradientPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2GradientPanel2, BunifuAnimatorNS.DecorationType.None);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(11)))), ((int)(((byte)(69)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(1, 50);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1715, 5);
-            this.guna2GradientPanel2.TabIndex = 15;
-            // 
-            // guna2ShadowPanel1
-            // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel5);
-            this.guna2ShadowPanel1.Controls.Add(this.cmbLevel);
-            this.guna2ShadowPanel1.Controls.Add(this.cmbBuilding);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2ShadowPanel1.Controls.Add(this.cmbCenter);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel7);
-            this.guna2ShadowPanel1.Controls.Add(this.cmbDepartment);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2ShadowPanel1.Controls.Add(this.cmbFaculty);
-            this.guna2ShadowPanel1.Controls.Add(this.txtLecturerID);
-            this.guna2ShadowPanel1.Controls.Add(this.txtLecturerName);
-            this.guna2ShadowPanel1.Controls.Add(this.guna2HtmlLabel3);
-            this.logoAnimator.SetDecoration(this.guna2ShadowPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2ShadowPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(92, 138);
-            this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 5;
-            this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(586, 597);
-            this.guna2ShadowPanel1.TabIndex = 21;
-            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel2, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel2, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(23, 28);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(179, 187);
             this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(97, 30);
@@ -371,37 +288,31 @@
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel1, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel1, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(23, 89);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(179, 248);
             this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(130, 30);
             this.guna2HtmlLabel1.TabIndex = 0;
-            this.guna2HtmlLabel1.Text = "Lecturer Name";
+            this.guna2HtmlLabel1.Text = "Lecturer Name     ";
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel5, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(23, 411);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(179, 570);
             this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(47, 30);
             this.guna2HtmlLabel5.TabIndex = 0;
-            this.guna2HtmlLabel5.Text = "Level";
+            this.guna2HtmlLabel5.Text = "Level ";
             // 
             // cmbLevel
             // 
             this.cmbLevel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.cmbLevel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
-            this.logoAnimator.SetDecoration(this.cmbLevel, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.cmbLevel, BunifuAnimatorNS.DecorationType.None);
             this.cmbLevel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLevel.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -419,7 +330,7 @@
             "5",
             "6"});
             this.cmbLevel.ItemsAppearance.Parent = this.cmbLevel;
-            this.cmbLevel.Location = new System.Drawing.Point(193, 398);
+            this.cmbLevel.Location = new System.Drawing.Point(398, 557);
             this.cmbLevel.Margin = new System.Windows.Forms.Padding(4);
             this.cmbLevel.Name = "cmbLevel";
             this.cmbLevel.ShadowDecoration.Parent = this.cmbLevel;
@@ -431,8 +342,6 @@
             this.cmbBuilding.Animated = true;
             this.cmbBuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.cmbBuilding.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
-            this.logoAnimator.SetDecoration(this.cmbBuilding, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.cmbBuilding, BunifuAnimatorNS.DecorationType.None);
             this.cmbBuilding.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbBuilding.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -446,7 +355,7 @@
             "New building",
             "D-block"});
             this.cmbBuilding.ItemsAppearance.Parent = this.cmbBuilding;
-            this.cmbBuilding.Location = new System.Drawing.Point(193, 336);
+            this.cmbBuilding.Location = new System.Drawing.Point(398, 495);
             this.cmbBuilding.Margin = new System.Windows.Forms.Padding(4);
             this.cmbBuilding.Name = "cmbBuilding";
             this.cmbBuilding.ShadowDecoration.Parent = this.cmbBuilding;
@@ -456,23 +365,19 @@
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel8, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel8, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel8.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(23, 347);
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(179, 506);
             this.guna2HtmlLabel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(75, 30);
             this.guna2HtmlLabel8.TabIndex = 0;
-            this.guna2HtmlLabel8.Text = "Building";
+            this.guna2HtmlLabel8.Text = "Building ";
             // 
             // cmbCenter
             // 
             this.cmbCenter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.cmbCenter.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
-            this.logoAnimator.SetDecoration(this.cmbCenter, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.cmbCenter, BunifuAnimatorNS.DecorationType.None);
             this.cmbCenter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbCenter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCenter.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -490,7 +395,7 @@
             "Kurunagala",
             "Jaffna"});
             this.cmbCenter.ItemsAppearance.Parent = this.cmbCenter;
-            this.cmbCenter.Location = new System.Drawing.Point(193, 274);
+            this.cmbCenter.Location = new System.Drawing.Point(398, 433);
             this.cmbCenter.Margin = new System.Windows.Forms.Padding(4);
             this.cmbCenter.Name = "cmbCenter";
             this.cmbCenter.ShadowDecoration.Parent = this.cmbCenter;
@@ -500,23 +405,19 @@
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel7, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel7, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(23, 283);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(179, 442);
             this.guna2HtmlLabel7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(60, 30);
             this.guna2HtmlLabel7.TabIndex = 0;
-            this.guna2HtmlLabel7.Text = "Center ";
+            this.guna2HtmlLabel7.Text = "Center  ";
             // 
             // cmbDepartment
             // 
             this.cmbDepartment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.cmbDepartment.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
-            this.logoAnimator.SetDecoration(this.cmbDepartment, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.cmbDepartment, BunifuAnimatorNS.DecorationType.None);
             this.cmbDepartment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDepartment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -532,7 +433,7 @@
             "DS",
             "CS"});
             this.cmbDepartment.ItemsAppearance.Parent = this.cmbDepartment;
-            this.cmbDepartment.Location = new System.Drawing.Point(193, 213);
+            this.cmbDepartment.Location = new System.Drawing.Point(398, 372);
             this.cmbDepartment.Margin = new System.Windows.Forms.Padding(4);
             this.cmbDepartment.Name = "cmbDepartment";
             this.cmbDepartment.ShadowDecoration.Parent = this.cmbDepartment;
@@ -542,23 +443,19 @@
             // guna2HtmlLabel4
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel4, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(23, 219);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(179, 378);
             this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(108, 30);
             this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "Department ";
+            this.guna2HtmlLabel4.Text = "Department";
             // 
             // cmbFaculty
             // 
             this.cmbFaculty.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.cmbFaculty.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
-            this.logoAnimator.SetDecoration(this.cmbFaculty, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.cmbFaculty, BunifuAnimatorNS.DecorationType.None);
             this.cmbFaculty.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbFaculty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFaculty.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -574,7 +471,7 @@
             "Business",
             "Humanities & Sciences"});
             this.cmbFaculty.ItemsAppearance.Parent = this.cmbFaculty;
-            this.cmbFaculty.Location = new System.Drawing.Point(193, 151);
+            this.cmbFaculty.Location = new System.Drawing.Point(398, 310);
             this.cmbFaculty.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFaculty.Name = "cmbFaculty";
             this.cmbFaculty.ShadowDecoration.Parent = this.cmbFaculty;
@@ -586,8 +483,6 @@
             this.txtLecturerID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.txtLecturerID.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
             this.txtLecturerID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.txtLecturerID, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.txtLecturerID, BunifuAnimatorNS.DecorationType.None);
             this.txtLecturerID.DefaultText = "";
             this.txtLecturerID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtLecturerID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -600,14 +495,14 @@
             this.txtLecturerID.ForeColor = System.Drawing.Color.Black;
             this.txtLecturerID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLecturerID.HoverState.Parent = this.txtLecturerID;
-            this.txtLecturerID.Location = new System.Drawing.Point(193, 28);
+            this.txtLecturerID.Location = new System.Drawing.Point(398, 187);
             this.txtLecturerID.Margin = new System.Windows.Forms.Padding(4);
             this.txtLecturerID.Name = "txtLecturerID";
             this.txtLecturerID.PasswordChar = '\0';
             this.txtLecturerID.PlaceholderText = "";
             this.txtLecturerID.SelectedText = "";
             this.txtLecturerID.ShadowDecoration.Parent = this.txtLecturerID;
-            this.txtLecturerID.Size = new System.Drawing.Size(276, 44);
+            this.txtLecturerID.Size = new System.Drawing.Size(275, 36);
             this.txtLecturerID.TabIndex = 1;
             // 
             // txtLecturerName
@@ -615,8 +510,6 @@
             this.txtLecturerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
             this.txtLecturerName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
             this.txtLecturerName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.txtLecturerName, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.txtLecturerName, BunifuAnimatorNS.DecorationType.None);
             this.txtLecturerName.DefaultText = "";
             this.txtLecturerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtLecturerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -629,42 +522,53 @@
             this.txtLecturerName.ForeColor = System.Drawing.Color.Black;
             this.txtLecturerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLecturerName.HoverState.Parent = this.txtLecturerName;
-            this.txtLecturerName.Location = new System.Drawing.Point(193, 90);
+            this.txtLecturerName.Location = new System.Drawing.Point(398, 249);
             this.txtLecturerName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLecturerName.Name = "txtLecturerName";
             this.txtLecturerName.PasswordChar = '\0';
             this.txtLecturerName.PlaceholderText = "";
             this.txtLecturerName.SelectedText = "";
             this.txtLecturerName.ShadowDecoration.Parent = this.txtLecturerName;
-            this.txtLecturerName.Size = new System.Drawing.Size(276, 44);
+            this.txtLecturerName.Size = new System.Drawing.Size(275, 36);
             this.txtLecturerName.TabIndex = 1;
             // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel3, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(23, 155);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(179, 314);
             this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(65, 30);
             this.guna2HtmlLabel3.TabIndex = 0;
-            this.guna2HtmlLabel3.Text = "Faculty";
+            this.guna2HtmlLabel3.Text = "Faculty   ";
             // 
             // guna2CustomGradientPanel1
             // 
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2ShadowPanel1);
-            this.guna2CustomGradientPanel1.Controls.Add(this.guna2GradientPanel2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.rcleButton1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel6);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnUpdate);
-            this.guna2CustomGradientPanel1.Controls.Add(this.dgvLecturer);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel5);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnDelete);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmbLevel);
             this.guna2CustomGradientPanel1.Controls.Add(this.txtSearch);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmbBuilding);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnClear);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel8);
             this.guna2CustomGradientPanel1.Controls.Add(this.btnSave);
-            this.logoAnimator.SetDecoration(this.guna2CustomGradientPanel1, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2CustomGradientPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmbCenter);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtLecturerName);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmbDepartment);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtRank);
+            this.guna2CustomGradientPanel1.Controls.Add(this.guna2HtmlLabel4);
+            this.guna2CustomGradientPanel1.Controls.Add(this.txtLecturerID);
+            this.guna2CustomGradientPanel1.Controls.Add(this.cmbFaculty);
+            this.guna2CustomGradientPanel1.Controls.Add(this.dgvLecturer);
             this.guna2CustomGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.Navy;
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(6)))), ((int)(((byte)(54)))));
@@ -678,30 +582,60 @@
             this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(1737, 895);
             this.guna2CustomGradientPanel1.TabIndex = 23;
             // 
-            // logoAnimator
+            // txtRank
             // 
-            this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.logoAnimator.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 20;
-            animation4.Padding = new System.Windows.Forms.Padding(30);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation4;
+            this.txtRank.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
+            this.txtRank.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(70)))), ((int)(((byte)(138)))));
+            this.txtRank.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRank.DefaultText = "";
+            this.txtRank.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRank.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRank.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRank.DisabledState.Parent = this.txtRank;
+            this.txtRank.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRank.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRank.FocusedState.Parent = this.txtRank;
+            this.txtRank.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRank.ForeColor = System.Drawing.Color.Black;
+            this.txtRank.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRank.HoverState.Parent = this.txtRank;
+            this.txtRank.Location = new System.Drawing.Point(398, 618);
+            this.txtRank.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRank.Name = "txtRank";
+            this.txtRank.PasswordChar = '\0';
+            this.txtRank.PlaceholderText = "";
+            this.txtRank.ReadOnly = true;
+            this.txtRank.SelectedText = "";
+            this.txtRank.ShadowDecoration.Parent = this.txtRank;
+            this.txtRank.Size = new System.Drawing.Size(275, 36);
+            this.txtRank.TabIndex = 1;
             // 
-            // guna2DragControl1
+            // guna2HtmlLabel6
             // 
-            this.guna2DragControl1.ContainerControl = this;
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(247)))));
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(179, 617);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(46, 30);
+            this.guna2HtmlLabel6.TabIndex = 0;
+            this.guna2HtmlLabel6.Text = "Rank";
+            // 
+            // rcleButton1
+            // 
+            this.rcleButton1.CheckedState.Parent = this.rcleButton1;
+            this.rcleButton1.CustomImages.Parent = this.rcleButton1;
+            this.rcleButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.rcleButton1.ForeColor = System.Drawing.Color.White;
+            this.rcleButton1.HoverState.Parent = this.rcleButton1;
+            this.rcleButton1.Location = new System.Drawing.Point(638, 619);
+            this.rcleButton1.Name = "rcleButton1";
+            this.rcleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.rcleButton1.ShadowDecoration.Parent = this.rcleButton1;
+            this.rcleButton1.Size = new System.Drawing.Size(35, 35);
+            this.rcleButton1.TabIndex = 4;
+            this.rcleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // lecture
             // 
@@ -709,26 +643,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1737, 895);
             this.Controls.Add(this.guna2CustomGradientPanel1);
-            this.btnAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Name = "lecture";
             this.Text = "lecture";
             this.Load += new System.EventHandler(this.lecture_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLecturer)).EndInit();
-            this.guna2ShadowPanel1.ResumeLayout(false);
-            this.guna2ShadowPanel1.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.guna2CustomGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private BunifuAnimatorNS.BunifuTransition btnAnimator;
-        private BunifuAnimatorNS.BunifuTransition logoAnimator;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -743,12 +669,14 @@
         private Guna.UI2.WinForms.Guna2TextBox txtLecturerID;
         private Guna.UI2.WinForms.Guna2TextBox txtLecturerName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientButton btnUpdate;
         private Guna.UI2.WinForms.Guna2DataGridView dgvLecturer;
         private Guna.UI2.WinForms.Guna2GradientButton btnDelete;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2GradientButton btnClear;
         private Guna.UI2.WinForms.Guna2GradientButton btnSave;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2TextBox txtRank;
+        private Guna.UI2.WinForms.Guna2CircleButton rcleButton1;
     }
 }

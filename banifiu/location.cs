@@ -17,41 +17,8 @@ namespace banifiu
         {
             InitializeComponent();
 
-            dataGridView1.Columns.Add("id", "ID");
-            dataGridView1.Columns.Add("bname", "Buildimg name");
-            dataGridView1.Columns.Add("rname", "room name");
-            dataGridView1.Columns.Add("rtype", "room type");
-
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.White;
-
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-
-
-
         }
 
-        private void bunifuCustomLabel7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomLabel8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
@@ -72,7 +39,7 @@ namespace banifiu
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
 
-                
+                load_l_table();
 
 
             }
@@ -83,16 +50,6 @@ namespace banifiu
         }
 
 
-       
-
-       
-        private void bunifuThinButton21_Click(object sender, EventArgs e)
-        {
-
-            load_l_table();
-
-
-        }
         public void load_l_table()
 
         {
@@ -117,49 +74,8 @@ namespace banifiu
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-        
 
-        }
-        //load DATA
-        private void bunifuThinButton24_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                String connectionString = "server=127.0.0.1;Uid = root;pwd = root;database = addlocation ";
-                MySqlConnection con = new MySqlConnection(connectionString);
-                con.Open();
-               
-
-                String id = txtid.Text;
-                
-
-                String sql = "select * from locationt where id = '" +id+ "' ";
-
-                MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = sql;
-                MySqlDataReader dr = cmd.ExecuteReader();
-
-                if (dr.Read())
-                {
-                    
-
-                    bname1.Text = dr["bname"].ToString();
-                    roomntxt.Text = dr["rname"].ToString();
-                    buildTtxt.Text = dr["rtype"].ToString();
-                }
-
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-          
-
-        }
+     
         //update
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
@@ -182,7 +98,7 @@ namespace banifiu
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
 
-            
+                load_l_table();
 
 
             }
@@ -213,7 +129,7 @@ namespace banifiu
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
 
-
+                load_l_table();
             }
             catch (Exception ex)
             {
@@ -222,37 +138,19 @@ namespace banifiu
 
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-           // Form4 f1 = new Form4();
-           // f1.Show();
-        }
+     
 
-        private void btnSessionNotAvailM_Click_1(object sender, EventArgs e)
-        {
-            //this.Hide();
-          //  Form3 f1 = new Form3();
-
-          //  f1.Show();
-        }
-
-        private void btnTagM_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-            txtid.Clear();
-                bname1.Clear();
-                roomntxt.Clear();
-            buildTtxt.Clear();
+
+
+            txtid.Text = string.Empty;
+            bname1.Text = string.Empty;
+            roomntxt.Text = string.Empty;
+            buildTtxt.Text = string.Empty;
+       
         }
 
         private void location_Load(object sender, EventArgs e)
@@ -260,7 +158,9 @@ namespace banifiu
             load_l_table();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+    
+
+        private void dataGridView1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -278,6 +178,7 @@ namespace banifiu
             {
 
             }
+
         }
     }
     

@@ -43,29 +43,28 @@
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown5 = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown6 = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown7 = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2NumericUpDown8 = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2NumericUpDown5 = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2NumericUpDown6 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2NumericUpDown7 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2NumericUpDown8 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -127,12 +126,11 @@
             this.bunifuTransition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
-            this.guna2ShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown2)).BeginInit();
@@ -215,13 +213,28 @@
             // 
             // guna2CustomGradientPanel2
             // 
-            this.guna2CustomGradientPanel2.Controls.Add(this.guna2ShadowPanel3);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2ComboBox3);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2ComboBox4);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel17);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel18);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2DataGridView1);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel19);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2TextBox1);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel20);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2GradientButton1);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel21);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2GradientButton2);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2NumericUpDown5);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2GradientButton3);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel22);
             this.guna2CustomGradientPanel2.Controls.Add(this.guna2GradientButton4);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2NumericUpDown6);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2TextBox5);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel23);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2TextBox4);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2NumericUpDown7);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2NumericUpDown8);
+            this.guna2CustomGradientPanel2.Controls.Add(this.guna2HtmlLabel24);
             this.bunifuTransition2.SetDecoration(this.guna2CustomGradientPanel2, BunifuAnimatorNS.DecorationType.None);
             this.btnAnimator.SetDecoration(this.guna2CustomGradientPanel2, BunifuAnimatorNS.DecorationType.None);
             this.logoAnimator.SetDecoration(this.guna2CustomGradientPanel2, BunifuAnimatorNS.DecorationType.None);
@@ -238,38 +251,6 @@
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1863, 941);
             this.guna2CustomGradientPanel2.TabIndex = 15;
-            // 
-            // guna2ShadowPanel3
-            // 
-            this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ShadowPanel3.Controls.Add(this.guna2ComboBox3);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2ComboBox4);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel17);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel18);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel19);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel20);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel21);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2NumericUpDown5);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel22);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2NumericUpDown6);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel23);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2NumericUpDown7);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2HtmlLabel24);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2NumericUpDown8);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2TextBox4);
-            this.guna2ShadowPanel3.Controls.Add(this.guna2TextBox5);
-            this.bunifuTransition2.SetDecoration(this.guna2ShadowPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2ShadowPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2ShadowPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2ShadowPanel3, BunifuAnimatorNS.DecorationType.None);
-            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(118, 75);
-            this.guna2ShadowPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
-            this.guna2ShadowPanel3.Radius = 5;
-            this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(4)))), ((int)(((byte)(35)))));
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(684, 564);
-            this.guna2ShadowPanel3.TabIndex = 14;
             // 
             // guna2ComboBox3
             // 
@@ -291,7 +272,7 @@
             "1",
             "2"});
             this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(292, 101);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(494, 256);
             this.guna2ComboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
@@ -320,7 +301,7 @@
             "Year 3",
             "Year 4"});
             this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(292, 44);
+            this.guna2ComboBox4.Location = new System.Drawing.Point(494, 199);
             this.guna2ComboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ComboBox4.Name = "guna2ComboBox4";
             this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
@@ -336,7 +317,7 @@
             this.btnAnimator.SetDecoration(this.guna2HtmlLabel17, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel17.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.guna2HtmlLabel17.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel17.Location = new System.Drawing.Point(21, 48);
+            this.guna2HtmlLabel17.Location = new System.Drawing.Point(223, 203);
             this.guna2HtmlLabel17.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             this.guna2HtmlLabel17.Size = new System.Drawing.Size(112, 30);
@@ -352,264 +333,12 @@
             this.btnAnimator.SetDecoration(this.guna2HtmlLabel18, BunifuAnimatorNS.DecorationType.None);
             this.guna2HtmlLabel18.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.guna2HtmlLabel18.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(19, 103);
+            this.guna2HtmlLabel18.Location = new System.Drawing.Point(221, 258);
             this.guna2HtmlLabel18.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
             this.guna2HtmlLabel18.Size = new System.Drawing.Size(154, 30);
             this.guna2HtmlLabel18.TabIndex = 0;
             this.guna2HtmlLabel18.Text = "Offered Semester";
-            // 
-            // guna2HtmlLabel19
-            // 
-            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel19.Location = new System.Drawing.Point(19, 156);
-            this.guna2HtmlLabel19.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
-            this.guna2HtmlLabel19.Size = new System.Drawing.Size(125, 30);
-            this.guna2HtmlLabel19.TabIndex = 0;
-            this.guna2HtmlLabel19.Text = "Subject Name";
-            // 
-            // guna2HtmlLabel20
-            // 
-            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(17, 218);
-            this.guna2HtmlLabel20.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(119, 30);
-            this.guna2HtmlLabel20.TabIndex = 0;
-            this.guna2HtmlLabel20.Text = "Subject Code";
-            // 
-            // guna2HtmlLabel21
-            // 
-            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel21.Location = new System.Drawing.Point(17, 282);
-            this.guna2HtmlLabel21.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
-            this.guna2HtmlLabel21.Size = new System.Drawing.Size(219, 30);
-            this.guna2HtmlLabel21.TabIndex = 0;
-            this.guna2HtmlLabel21.Text = "Number of lecture Hours";
-            // 
-            // guna2NumericUpDown5
-            // 
-            this.guna2NumericUpDown5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
-            this.guna2NumericUpDown5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown5.DisabledState.Parent = this.guna2NumericUpDown5;
-            this.guna2NumericUpDown5.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown5.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown5.FocusedState.Parent = this.guna2NumericUpDown5;
-            this.guna2NumericUpDown5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2NumericUpDown5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown5.Location = new System.Drawing.Point(292, 443);
-            this.guna2NumericUpDown5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2NumericUpDown5.Name = "guna2NumericUpDown5";
-            this.guna2NumericUpDown5.ShadowDecoration.Parent = this.guna2NumericUpDown5;
-            this.guna2NumericUpDown5.Size = new System.Drawing.Size(133, 44);
-            this.guna2NumericUpDown5.TabIndex = 5;
-            // 
-            // guna2HtmlLabel22
-            // 
-            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel22.Location = new System.Drawing.Point(17, 337);
-            this.guna2HtmlLabel22.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(227, 30);
-            this.guna2HtmlLabel22.TabIndex = 0;
-            this.guna2HtmlLabel22.Text = "Number of Tutorial Hours";
-            // 
-            // guna2NumericUpDown6
-            // 
-            this.guna2NumericUpDown6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
-            this.guna2NumericUpDown6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown6.DisabledState.Parent = this.guna2NumericUpDown6;
-            this.guna2NumericUpDown6.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown6.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown6.FocusedState.Parent = this.guna2NumericUpDown6;
-            this.guna2NumericUpDown6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2NumericUpDown6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown6.Location = new System.Drawing.Point(292, 386);
-            this.guna2NumericUpDown6.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2NumericUpDown6.Name = "guna2NumericUpDown6";
-            this.guna2NumericUpDown6.ShadowDecoration.Parent = this.guna2NumericUpDown6;
-            this.guna2NumericUpDown6.Size = new System.Drawing.Size(133, 44);
-            this.guna2NumericUpDown6.TabIndex = 5;
-            // 
-            // guna2HtmlLabel23
-            // 
-            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(17, 398);
-            this.guna2HtmlLabel23.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(191, 30);
-            this.guna2HtmlLabel23.TabIndex = 0;
-            this.guna2HtmlLabel23.Text = "Number of Lab Hours";
-            // 
-            // guna2NumericUpDown7
-            // 
-            this.guna2NumericUpDown7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
-            this.guna2NumericUpDown7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown7.DisabledState.Parent = this.guna2NumericUpDown7;
-            this.guna2NumericUpDown7.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown7.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown7.FocusedState.Parent = this.guna2NumericUpDown7;
-            this.guna2NumericUpDown7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2NumericUpDown7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown7.Location = new System.Drawing.Point(292, 329);
-            this.guna2NumericUpDown7.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2NumericUpDown7.Name = "guna2NumericUpDown7";
-            this.guna2NumericUpDown7.ShadowDecoration.Parent = this.guna2NumericUpDown7;
-            this.guna2NumericUpDown7.Size = new System.Drawing.Size(133, 44);
-            this.guna2NumericUpDown7.TabIndex = 5;
-            // 
-            // guna2HtmlLabel24
-            // 
-            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel24.Location = new System.Drawing.Point(17, 450);
-            this.guna2HtmlLabel24.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
-            this.guna2HtmlLabel24.Size = new System.Drawing.Size(243, 30);
-            this.guna2HtmlLabel24.TabIndex = 0;
-            this.guna2HtmlLabel24.Text = "Number of Evolution Hours";
-            // 
-            // guna2NumericUpDown8
-            // 
-            this.guna2NumericUpDown8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.logoAnimator.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
-            this.guna2NumericUpDown8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown8.DisabledState.Parent = this.guna2NumericUpDown8;
-            this.guna2NumericUpDown8.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown8.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown8.FocusedState.Parent = this.guna2NumericUpDown8;
-            this.guna2NumericUpDown8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2NumericUpDown8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown8.Location = new System.Drawing.Point(292, 271);
-            this.guna2NumericUpDown8.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2NumericUpDown8.Name = "guna2NumericUpDown8";
-            this.guna2NumericUpDown8.ShadowDecoration.Parent = this.guna2NumericUpDown8;
-            this.guna2NumericUpDown8.Size = new System.Drawing.Size(133, 44);
-            this.guna2NumericUpDown8.TabIndex = 5;
-            // 
-            // guna2TextBox4
-            // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition2.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(292, 214);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(287, 44);
-            this.guna2TextBox4.TabIndex = 4;
-            // 
-            // guna2TextBox5
-            // 
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTransition2.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
-            this.logoAnimator.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuTransition1.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(292, 158);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(287, 44);
-            this.guna2TextBox5.TabIndex = 4;
             // 
             // guna2DataGridView1
             // 
@@ -647,7 +376,7 @@
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(220)))), ((int)(((byte)(242)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(900, 70);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(874, 169);
             this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
@@ -680,6 +409,22 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
+            // guna2HtmlLabel19
+            // 
+            this.guna2HtmlLabel19.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel19, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel19.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel19.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel19.Location = new System.Drawing.Point(221, 311);
+            this.guna2HtmlLabel19.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel19.Name = "guna2HtmlLabel19";
+            this.guna2HtmlLabel19.Size = new System.Drawing.Size(125, 30);
+            this.guna2HtmlLabel19.TabIndex = 0;
+            this.guna2HtmlLabel19.Text = "Subject Name";
+            // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.AutoRoundedCorners = true;
@@ -703,7 +448,7 @@
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(900, 22);
+            this.guna2TextBox1.Location = new System.Drawing.Point(862, 114);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -714,6 +459,22 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(295, 41);
             this.guna2TextBox1.TabIndex = 13;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            // 
+            // guna2HtmlLabel20
+            // 
+            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel20, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel20.Location = new System.Drawing.Point(219, 373);
+            this.guna2HtmlLabel20.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
+            this.guna2HtmlLabel20.Size = new System.Drawing.Size(119, 30);
+            this.guna2HtmlLabel20.TabIndex = 0;
+            this.guna2HtmlLabel20.Text = "Subject Code";
             // 
             // guna2GradientButton1
             // 
@@ -738,7 +499,7 @@
             this.guna2GradientButton1.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
             this.guna2GradientButton1.IndicateFocus = true;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(1512, 582);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(1512, 694);
             this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
@@ -747,6 +508,22 @@
             this.guna2GradientButton1.Text = "Delete";
             this.guna2GradientButton1.UseTransparentBackground = true;
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            // 
+            // guna2HtmlLabel21
+            // 
+            this.guna2HtmlLabel21.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel21, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel21.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel21.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel21.Location = new System.Drawing.Point(219, 437);
+            this.guna2HtmlLabel21.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel21.Name = "guna2HtmlLabel21";
+            this.guna2HtmlLabel21.Size = new System.Drawing.Size(219, 30);
+            this.guna2HtmlLabel21.TabIndex = 0;
+            this.guna2HtmlLabel21.Text = "Number of lecture Hours";
             // 
             // guna2GradientButton2
             // 
@@ -771,7 +548,7 @@
             this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
             this.guna2GradientButton2.IndicateFocus = true;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(1308, 582);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(1308, 694);
             this.guna2GradientButton2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
@@ -780,6 +557,31 @@
             this.guna2GradientButton2.Text = "Update";
             this.guna2GradientButton2.UseTransparentBackground = true;
             this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
+            // 
+            // guna2NumericUpDown5
+            // 
+            this.guna2NumericUpDown5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.logoAnimator.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown5, BunifuAnimatorNS.DecorationType.None);
+            this.guna2NumericUpDown5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2NumericUpDown5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2NumericUpDown5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2NumericUpDown5.DisabledState.Parent = this.guna2NumericUpDown5;
+            this.guna2NumericUpDown5.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.guna2NumericUpDown5.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.guna2NumericUpDown5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2NumericUpDown5.FocusedState.Parent = this.guna2NumericUpDown5;
+            this.guna2NumericUpDown5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2NumericUpDown5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2NumericUpDown5.Location = new System.Drawing.Point(494, 598);
+            this.guna2NumericUpDown5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2NumericUpDown5.Name = "guna2NumericUpDown5";
+            this.guna2NumericUpDown5.ShadowDecoration.Parent = this.guna2NumericUpDown5;
+            this.guna2NumericUpDown5.Size = new System.Drawing.Size(133, 44);
+            this.guna2NumericUpDown5.TabIndex = 5;
             // 
             // guna2GradientButton3
             // 
@@ -804,7 +606,7 @@
             this.guna2GradientButton3.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
             this.guna2GradientButton3.IndicateFocus = true;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(900, 582);
+            this.guna2GradientButton3.Location = new System.Drawing.Point(900, 694);
             this.guna2GradientButton3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton3.Name = "guna2GradientButton3";
             this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
@@ -813,6 +615,22 @@
             this.guna2GradientButton3.Text = "Save";
             this.guna2GradientButton3.UseTransparentBackground = true;
             this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
+            // 
+            // guna2HtmlLabel22
+            // 
+            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel22, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel22.Location = new System.Drawing.Point(219, 492);
+            this.guna2HtmlLabel22.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
+            this.guna2HtmlLabel22.Size = new System.Drawing.Size(227, 30);
+            this.guna2HtmlLabel22.TabIndex = 0;
+            this.guna2HtmlLabel22.Text = "Number of Tutorial Hours";
             // 
             // guna2GradientButton4
             // 
@@ -837,7 +655,7 @@
             this.guna2GradientButton4.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(75)))), ((int)(((byte)(236)))));
             this.guna2GradientButton4.HoverState.Parent = this.guna2GradientButton4;
             this.guna2GradientButton4.IndicateFocus = true;
-            this.guna2GradientButton4.Location = new System.Drawing.Point(1104, 582);
+            this.guna2GradientButton4.Location = new System.Drawing.Point(1104, 694);
             this.guna2GradientButton4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientButton4.Name = "guna2GradientButton4";
             this.guna2GradientButton4.ShadowDecoration.Parent = this.guna2GradientButton4;
@@ -846,6 +664,169 @@
             this.guna2GradientButton4.Text = "Clear";
             this.guna2GradientButton4.UseTransparentBackground = true;
             this.guna2GradientButton4.Click += new System.EventHandler(this.guna2GradientButton4_Click);
+            // 
+            // guna2NumericUpDown6
+            // 
+            this.guna2NumericUpDown6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.logoAnimator.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown6, BunifuAnimatorNS.DecorationType.None);
+            this.guna2NumericUpDown6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2NumericUpDown6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2NumericUpDown6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2NumericUpDown6.DisabledState.Parent = this.guna2NumericUpDown6;
+            this.guna2NumericUpDown6.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.guna2NumericUpDown6.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.guna2NumericUpDown6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2NumericUpDown6.FocusedState.Parent = this.guna2NumericUpDown6;
+            this.guna2NumericUpDown6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2NumericUpDown6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2NumericUpDown6.Location = new System.Drawing.Point(494, 541);
+            this.guna2NumericUpDown6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2NumericUpDown6.Name = "guna2NumericUpDown6";
+            this.guna2NumericUpDown6.ShadowDecoration.Parent = this.guna2NumericUpDown6;
+            this.guna2NumericUpDown6.Size = new System.Drawing.Size(133, 44);
+            this.guna2NumericUpDown6.TabIndex = 5;
+            // 
+            // guna2TextBox5
+            // 
+            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition2.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2TextBox5, BunifuAnimatorNS.DecorationType.None);
+            this.guna2TextBox5.DefaultText = "";
+            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Location = new System.Drawing.Point(494, 313);
+            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox5.Name = "guna2TextBox5";
+            this.guna2TextBox5.PasswordChar = '\0';
+            this.guna2TextBox5.PlaceholderText = "";
+            this.guna2TextBox5.SelectedText = "";
+            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
+            this.guna2TextBox5.Size = new System.Drawing.Size(287, 44);
+            this.guna2TextBox5.TabIndex = 4;
+            // 
+            // guna2HtmlLabel23
+            // 
+            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel23, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel23.Location = new System.Drawing.Point(219, 553);
+            this.guna2HtmlLabel23.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
+            this.guna2HtmlLabel23.Size = new System.Drawing.Size(191, 30);
+            this.guna2HtmlLabel23.TabIndex = 0;
+            this.guna2HtmlLabel23.Text = "Number of Lab Hours";
+            // 
+            // guna2TextBox4
+            // 
+            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuTransition2.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2TextBox4, BunifuAnimatorNS.DecorationType.None);
+            this.guna2TextBox4.DefaultText = "";
+            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Location = new System.Drawing.Point(494, 369);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox4.Name = "guna2TextBox4";
+            this.guna2TextBox4.PasswordChar = '\0';
+            this.guna2TextBox4.PlaceholderText = "";
+            this.guna2TextBox4.SelectedText = "";
+            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
+            this.guna2TextBox4.Size = new System.Drawing.Size(287, 44);
+            this.guna2TextBox4.TabIndex = 4;
+            // 
+            // guna2NumericUpDown7
+            // 
+            this.guna2NumericUpDown7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.logoAnimator.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown7, BunifuAnimatorNS.DecorationType.None);
+            this.guna2NumericUpDown7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2NumericUpDown7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2NumericUpDown7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2NumericUpDown7.DisabledState.Parent = this.guna2NumericUpDown7;
+            this.guna2NumericUpDown7.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.guna2NumericUpDown7.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.guna2NumericUpDown7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2NumericUpDown7.FocusedState.Parent = this.guna2NumericUpDown7;
+            this.guna2NumericUpDown7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2NumericUpDown7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2NumericUpDown7.Location = new System.Drawing.Point(494, 484);
+            this.guna2NumericUpDown7.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2NumericUpDown7.Name = "guna2NumericUpDown7";
+            this.guna2NumericUpDown7.ShadowDecoration.Parent = this.guna2NumericUpDown7;
+            this.guna2NumericUpDown7.Size = new System.Drawing.Size(133, 44);
+            this.guna2NumericUpDown7.TabIndex = 5;
+            // 
+            // guna2NumericUpDown8
+            // 
+            this.guna2NumericUpDown8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.logoAnimator.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2NumericUpDown8, BunifuAnimatorNS.DecorationType.None);
+            this.guna2NumericUpDown8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2NumericUpDown8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2NumericUpDown8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2NumericUpDown8.DisabledState.Parent = this.guna2NumericUpDown8;
+            this.guna2NumericUpDown8.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.guna2NumericUpDown8.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.guna2NumericUpDown8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2NumericUpDown8.FocusedState.Parent = this.guna2NumericUpDown8;
+            this.guna2NumericUpDown8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2NumericUpDown8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2NumericUpDown8.Location = new System.Drawing.Point(494, 426);
+            this.guna2NumericUpDown8.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2NumericUpDown8.Name = "guna2NumericUpDown8";
+            this.guna2NumericUpDown8.ShadowDecoration.Parent = this.guna2NumericUpDown8;
+            this.guna2NumericUpDown8.Size = new System.Drawing.Size(133, 44);
+            this.guna2NumericUpDown8.TabIndex = 5;
+            // 
+            // guna2HtmlLabel24
+            // 
+            this.guna2HtmlLabel24.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition2.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.logoAnimator.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2HtmlLabel24, BunifuAnimatorNS.DecorationType.None);
+            this.guna2HtmlLabel24.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.guna2HtmlLabel24.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel24.Location = new System.Drawing.Point(219, 605);
+            this.guna2HtmlLabel24.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel24.Name = "guna2HtmlLabel24";
+            this.guna2HtmlLabel24.Size = new System.Drawing.Size(243, 30);
+            this.guna2HtmlLabel24.TabIndex = 0;
+            this.guna2HtmlLabel24.Text = "Number of Evolution Hours";
             // 
             // guna2ShadowPanel2
             // 
@@ -2349,13 +2330,12 @@
             this.Load += new System.EventHandler(this.Subjects_Load);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
-            this.guna2ShadowPanel3.ResumeLayout(false);
-            this.guna2ShadowPanel3.PerformLayout();
+            this.guna2CustomGradientPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
@@ -2448,7 +2428,6 @@
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
-        private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;

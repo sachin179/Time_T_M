@@ -91,7 +91,7 @@
             // 
             this.button1.ForeColor = System.Drawing.Color.Transparent;
             this.button1.Image = global::banifiu.Properties.Resources.i;
-            this.button1.Location = new System.Drawing.Point(0, 492);
+            this.button1.Location = new System.Drawing.Point(0, 563);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 51);
             this.button1.TabIndex = 1;
@@ -247,6 +247,7 @@
             this.btnTagM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTagM.Textcolor = System.Drawing.Color.White;
             this.btnTagM.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTagM.Click += new System.EventHandler(this.btnTagM_Click);
             // 
             // btnLocationM
             // 
@@ -320,6 +321,7 @@
             this.btnStudentgrpM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnStudentgrpM.Textcolor = System.Drawing.Color.White;
             this.btnStudentgrpM.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudentgrpM.Click += new System.EventHandler(this.btnStudentgrpM_Click);
             // 
             // btnWorkM
             // 
@@ -430,6 +432,7 @@
             this.btnSubM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSubM.Textcolor = System.Drawing.Color.White;
             this.btnSubM.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubM.Click += new System.EventHandler(this.btnSubM_Click);
             // 
             // btnLecturerM
             // 
@@ -503,6 +506,7 @@
             this.btnSessionNotAvailM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSessionNotAvailM.Textcolor = System.Drawing.Color.White;
             this.btnSessionNotAvailM.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSessionNotAvailM.Click += new System.EventHandler(this.btnSessionNotAvailM_Click);
             // 
             // home
             // 

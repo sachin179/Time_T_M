@@ -103,6 +103,7 @@
     <Compile Include="BloggingContext.cs" />
     <Compile Include="connect.cs" />
     <Compile Include="connect2.cs" />
+    <Compile Include="DataBaseConnection.cs" />
     <Compile Include="Form20.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +134,48 @@
     <Compile Include="location.Designer.cs">
       <DependentUpon>location.cs</DependentUpon>
     </Compile>
+    <Compile Include="Location_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location_home.Designer.cs">
+      <DependentUpon>Location_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="location_not_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="location_not_a.Designer.cs">
+      <DependentUpon>location_not_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Session home.Designer.cs">
+      <DependentUpon>Session home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="set_session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="set_session.Designer.cs">
+      <DependentUpon>set_session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Se_Not_available.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Se_Not_available.Designer.cs">
+      <DependentUpon>Se_Not_available.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student_add.Designer.cs">
+      <DependentUpon>Student_add.cs</DependentUpon>
+    </Compile>
     <Compile Include="St_Static.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +202,18 @@
     <Compile Include="sub_static2.Designer.cs">
       <DependentUpon>sub_static2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tag_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tag_Add.Designer.cs">
+      <DependentUpon>Tag_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="working.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="working.Designer.cs">
+      <DependentUpon>working.cs</DependentUpon>
+    </Compile>
     <Compile Include="xyzDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -179,8 +234,29 @@
     <EmbeddedResource Include="location.resx">
       <DependentUpon>location.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Location_home.resx">
+      <DependentUpon>Location_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="location_not_a.resx">
+      <DependentUpon>location_not_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Session home.resx">
+      <DependentUpon>Session home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="set_session.resx">
+      <DependentUpon>set_session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Se_Not_available.resx">
+      <DependentUpon>Se_Not_available.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="statistic home.resx">
       <DependentUpon>statistic home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student_add.resx">
+      <DependentUpon>Student_add.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="St_Static.resx">
       <DependentUpon>St_Static.cs</DependentUpon>
@@ -200,6 +276,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sub_static2.resx">
       <DependentUpon>sub_static2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tag_Add.resx">
+      <DependentUpon>Tag_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="working.resx">
+      <DependentUpon>working.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="banifiu_TemporaryKey.pfx" />
     <None Include="packages.config" />

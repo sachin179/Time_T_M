@@ -87,5 +87,20 @@ namespace banifiu
         {
 
         }
+
+        private void bunifuCustomLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

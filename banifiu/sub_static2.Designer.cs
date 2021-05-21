@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sub_static2));
-            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.btnAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -49,33 +49,38 @@
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.logoAnimator = new BunifuAnimatorNS.BunifuTransition(this.components);
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAnimator
             // 
             this.btnAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.btnAnimator.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 1;
-            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 2F;
-            animation3.TransparencyCoeff = 0F;
-            this.btnAnimator.DefaultAnimation = animation3;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 1;
+            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 2F;
+            animation1.TransparencyCoeff = 0F;
+            this.btnAnimator.DefaultAnimation = animation1;
             // 
             // bunifuCustomLabel6
             // 
@@ -252,6 +257,7 @@
             this.bunifuGradientPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.guna2GradientPanel1);
             this.bunifuGradientPanel1.Controls.Add(this.chart1);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel4);
@@ -279,6 +285,26 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1510, 707);
             this.bunifuGradientPanel1.TabIndex = 2;
             // 
+            // chart1
+            // 
+            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.logoAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(298, 452);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Number Of Student";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(1113, 404);
+            this.chart1.TabIndex = 106;
+            this.chart1.Text = "chart1";
+            // 
             // guna2DragControl1
             // 
             this.guna2DragControl1.ContainerControl = this;
@@ -287,42 +313,97 @@
             // 
             this.logoAnimator.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
             this.logoAnimator.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 20;
-            animation4.Padding = new System.Windows.Forms.Padding(30);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.logoAnimator.DefaultAnimation = animation4;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 20;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.logoAnimator.DefaultAnimation = animation2;
             // 
-            // chart1
+            // guna2GradientPanel1
             // 
-            this.chart1.BorderlineColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.logoAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
-            this.btnAnimator.SetDecoration(this.chart1, BunifuAnimatorNS.DecorationType.None);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(298, 452);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Grayscale;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Number Of Student";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(1113, 404);
-            this.chart1.TabIndex = 106;
-            this.chart1.Text = "chart1";
+            this.guna2GradientPanel1.Controls.Add(this.guna2ControlBox3);
+            this.guna2GradientPanel1.Controls.Add(this.guna2ControlBox2);
+            this.guna2GradientPanel1.Controls.Add(this.guna2ControlBox1);
+            this.logoAnimator.SetDecoration(this.guna2GradientPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2GradientPanel1, BunifuAnimatorNS.DecorationType.None);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(81)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(4)))), ((int)(((byte)(27)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Color = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(19)))), ((int)(((byte)(111)))));
+            this.guna2GradientPanel1.ShadowDecoration.Enabled = true;
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1510, 49);
+            this.guna2GradientPanel1.TabIndex = 107;
+            // 
+            // guna2ControlBox3
+            // 
+            this.guna2ControlBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.logoAnimator.SetDecoration(this.guna2ControlBox3, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2ControlBox3, BunifuAnimatorNS.DecorationType.None);
+            this.guna2ControlBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox3.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(13)))), ((int)(((byte)(77)))));
+            this.guna2ControlBox3.HoverState.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox3.HoverState.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1366, 0);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Name = "guna2ControlBox3";
+            this.guna2ControlBox3.ShadowDecoration.Parent = this.guna2ControlBox3;
+            this.guna2ControlBox3.Size = new System.Drawing.Size(48, 49);
+            this.guna2ControlBox3.TabIndex = 2;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.logoAnimator.SetDecoration(this.guna2ControlBox2, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2ControlBox2, BunifuAnimatorNS.DecorationType.None);
+            this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(13)))), ((int)(((byte)(77)))));
+            this.guna2ControlBox2.HoverState.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1414, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
+            this.guna2ControlBox2.Size = new System.Drawing.Size(48, 49);
+            this.guna2ControlBox2.TabIndex = 1;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.logoAnimator.SetDecoration(this.guna2ControlBox1, BunifuAnimatorNS.DecorationType.None);
+            this.btnAnimator.SetDecoration(this.guna2ControlBox1, BunifuAnimatorNS.DecorationType.None);
+            this.guna2ControlBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(13)))), ((int)(((byte)(77)))));
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.Silver;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1462, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(48, 49);
+            this.guna2ControlBox1.TabIndex = 0;
             // 
             // sub_static2
             // 
@@ -338,6 +419,7 @@
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -361,5 +443,9 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

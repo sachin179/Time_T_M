@@ -20,6 +20,14 @@ namespace banifiu
         DataTable dt2;
         DataSet ds2;
 
+        MySqlCommand cmd;
+        // MySqlDataReader reader;
+        MySqlDataAdapter adapter;
+        DataTable dt;
+        DataSet ds;
+
+        connect con = new connect();
+
         public lecture()
         {
             InitializeComponent();
@@ -28,13 +36,13 @@ namespace banifiu
 
         public void lecture_load()
         {
-            dgvLecturer.DataSource = null;
-            con2.connection();
-            adapter2 = new MySqlDataAdapter("Select LecturerID'LecturerID',LecturerName'LecturerName',faculty'Faculty',department'Department',center'Center',building'Building',Level'Level' from lecturer ", con2.con2);
-            dt2 = new DataTable();
-            adapter2.Fill(dt2);
-            dgvLecturer.DataSource = dt2;
-            con2.con2.Close();
+            dgvLecturer.DataSource = null; 
+            con.connection();
+            adapter = new MySqlDataAdapter("Select lecturerID'lecturerID',lecturerName'lecturerName',faculty'faculty',department'department',center'center',building'building',level'level',rank'rank' from lecturer ", con.con);
+            dt = new DataTable();
+            adapter.Fill(dt);
+            dgvLecturer.DataSource = dt;
+            con.con.Close();
 
         }
 
@@ -61,8 +69,9 @@ namespace banifiu
             }
             else
             {
-                string rank = cmbLevel + "." + txtLecturerID.Text;
-                con2.datasend("insert into lecturer (`lecturerID`,`lecturerName`, `faculty`, `department`, `center`, `building`, `level`, `rank`) Value('" + txtLecturerID.Text + "','" + txtLecturerName.Text + "','" + cmbFaculty.Text + "', '" + cmbDepartment.Text + "', '" + cmbCenter.Text + "','" + cmbBuilding.Text + "','" + cmbLevel.Text + "','" + rank + "')");
+                
+                //var grpID = string.Concat(cmbAca.Text, ".", cmbGrp.Text);
+                con2.datasend("insert into lecturer (`lecturerID`,`lecturerName`, `faculty`, `department`, `center`, `building`, `level`, `rank`) Value('" + txtLecturerID.Text + "','" + txtLecturerName.Text + "','" + cmbFaculty.Text + "', '" + cmbDepartment.Text + "', '" + cmbCenter.Text + "','" + cmbBuilding.Text + "','" + cmbLevel.Text + "','" + txtRank.Text + "')");
                 txtLecturerID.Text = "";
                 txtLecturerName.Text = "";
                 cmbFaculty.SelectedItem = null;
@@ -70,9 +79,12 @@ namespace banifiu
                 cmbCenter.SelectedItem = null;
                 cmbBuilding.SelectedItem = null;
                 cmbLevel.SelectedItem = null;
+                txtRank.Text = "";
 
                 MessageBox.Show("Successfully Data Added", "Lecturer Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 lecture_load();
+                btnUpdate.Enabled = false;
+    
             }
         }
 
@@ -86,13 +98,14 @@ namespace banifiu
             cmbCenter.SelectedItem = null;
             cmbBuilding.SelectedItem = null;
             cmbLevel.SelectedItem = null;
+            txtRank.Text = "";
             MessageBox.Show("Successfully Deleted", "Lecturer Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
             lecture_load();
         }
 
         private void btnUpdate_Click_1(object sender, EventArgs e)
         {
-            con2.dataupdate("update lecturer set lecturerID= '" + txtLecturerID.Text + "',lecturerName='" + txtLecturerName.Text + "',faculty='" + cmbFaculty.Text + "',department='" + cmbDepartment.Text + "',center ='" + cmbCenter.Text + "',building='" + cmbBuilding.Text + "',level='" + cmbLevel.Text + "' where lecturerID='" + txtLecturerID.Text + "'");
+            con.dataupdate("update lecturer set lecturerID= '" + txtLecturerID.Text + "',lecturerName='" + txtLecturerName.Text + "',faculty='" + cmbFaculty.Text + "',department='" + cmbDepartment.Text + "',center ='" + cmbCenter.Text + "',building='" + cmbBuilding.Text + "',level='" + cmbLevel.Text + "' where lecturerID='" + txtLecturerID.Text + "'");
             txtLecturerID.Text = "";
             txtLecturerName.Text = "";
             cmbFaculty.SelectedItem = null;
@@ -100,6 +113,7 @@ namespace banifiu
             cmbCenter.SelectedItem = null;
             cmbBuilding.SelectedItem = null;
             cmbLevel.SelectedItem = null;
+            txtRank.Text = "";
             MessageBox.Show("Successfully Updated", "Lecturer Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
             lecture_load();
         }
@@ -116,6 +130,7 @@ namespace banifiu
                 cmbCenter.Text = row.Cells[4].Value.ToString();
                 cmbBuilding.Text = row.Cells[5].Value.ToString();
                 cmbLevel.Text = row.Cells[6].Value.ToString();
+                txtRank.Text = row.Cells[7].Value.ToString();
             }
         }
 
@@ -134,6 +149,7 @@ namespace banifiu
                 cmbCenter.Text = reader2.GetString("center");
                 cmbBuilding.Text = reader2.GetString("building");
                 cmbLevel.Text = reader2.GetString("level");
+                txtRank.Text = reader2.GetString("rank");
             }
             else
             {
@@ -144,6 +160,7 @@ namespace banifiu
                 cmbCenter.SelectedItem = null;
                 cmbBuilding.SelectedItem = null;
                 cmbLevel.SelectedItem = null;
+                txtRank.Text = "";
             }
         }
 
@@ -156,7 +173,13 @@ namespace banifiu
             cmbCenter.SelectedItem = null;
             cmbBuilding.SelectedItem = null;
             cmbLevel.SelectedItem = null;
+            txtRank.Text = "";
 
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            txtRank.Text = cmbLevel.Text + "." + txtLecturerID.Text;
         }
     }
 }
