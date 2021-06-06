@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FB8E4B3CDC4578772B740924CD45D66D3A2DE8B1</ManifestCertificateThumbprint>
+    <!--ManifestCertificateThumbprint>FB8E4B3CDC4578772B740924CD45D66D3A2DE8B1</ManifestCertificateThumbprint-->
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>banifiu_TemporaryKey.pfx</ManifestKeyFile>
